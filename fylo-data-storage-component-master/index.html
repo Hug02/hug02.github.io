@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Fylo data storage component</title>
+</head>
+<body>
+  <!-- <img src="images/bg-desktop.png" alt="background-images"> -->
+  <main>
+    <div id="main_container">
+      <div id="left_panel">
+        <h1><img src="images/logo.svg" alt="fylo-logo"></h1>
+        <div id="uploads_flex">
+          <div class="container_icon">
+            <a href="#"><img src="images/icon-document.svg" alt="icon_document" id="document_icon"></a>
+          </div>
+          <div class="container_icon">
+            <a href="#"><img src="images/icon-folder.svg" alt="icon_folder" id="folder_icon"></a>
+          </div>
+          <div class="container_icon">
+            <a href="#"><img src="images/icon-upload.svg" alt="icon_upload" id="upload_icon"></a>
+          </div>
+        </div>
+      </div>
+      <div id="right_panel">
+        <div id="main_box">
+          <p>You've used <em>815 GB</em> of your storage</p>
+          <div class="progress_bar">
+            <div id="current_progress">
+              <div id="current_progress_circle"></div>
+            </div>
+            <span class="legend min_size">0 GB</span>
+            <span class="legend max_size">1000 GB</span>
+          </div>
+        </div>
+        <div id="gb_left_box">
+          <div class="triangle"></div>
+          <span id="gb_left">185</span>
+          <p>GB Left</p>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </main>
+</body>
+</html>
