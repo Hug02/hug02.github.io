@@ -6,48 +6,44 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Fylo data storage component</title>
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+
 </head>
 <body>
-  <!-- <img src="images/bg-desktop.png" alt="background-images"> -->
-  <main>
-    <div id="main_container">
-      <div id="left_panel">
-        <h1><img src="images/logo.svg" alt="fylo-logo"></h1>
-        <div id="uploads_flex">
-          <div class="container_icon">
-            <a href="#"><img src="images/icon-document.svg" alt="icon_document" id="document_icon"></a>
-          </div>
-          <div class="container_icon">
-            <a href="#"><img src="images/icon-folder.svg" alt="icon_folder" id="folder_icon"></a>
-          </div>
-          <div class="container_icon">
-            <a href="#"><img src="images/icon-upload.svg" alt="icon_upload" id="upload_icon"></a>
-          </div>
-        </div>
+
+  <div class="container">
+    <!-- Rating state start -->
+    <div class="page current_page" id="rating_page">
+      <div class="img_wrapper">
+        <img src="images/icon-star.svg" alt="star-icon">
       </div>
-      <div id="right_panel">
-        <div id="main_box">
-          <p>You've used <em>815 GB</em> of your storage</p>
-          <div class="progress_bar">
-            <div id="current_progress">
-              <div id="current_progress_circle"></div>
-            </div>
-            <span class="legend min_size">0 GB</span>
-            <span class="legend max_size">1000 GB</span>
-          </div>
-        </div>
-        <div id="gb_left_box">
-          <div class="triangle"></div>
-          <span id="gb_left">185</span>
-          <p>GB Left</p>
-        </div>
-      </div>
+      <h1>How did we do?</h1>
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+      <ul>
+        <li class="rating_number">1</li>
+        <li class="rating_number">2</li>
+        <li class="rating_number">3</li>
+        <li class="rating_number">4</li>
+        <li class="rating_number">5</li>
+      </ul>
+      <button class="btn" type="submit" id="submit_button">Submit</button>
     </div>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+    <div class="page" id="thanks_page">
+      <img src="images/illustration-thank-you.svg" alt="thank_you">
+      <p id="result-text">You selected <span id="your_rating"></span> out of 5</p>
+
+      <em>Thank you!</em>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don't hesitate to get in touch!
+      </p>
     </div>
-  </main>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>
