@@ -14,7 +14,7 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: var(--very-dark-blue);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -46,7 +46,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 100%;
-    background-color: var(--very-dark-blue);
+    background-color: #3D3C3C;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +78,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--very-dark-blue);
+    background-color: #3D3C3C;
     transition: ease-in 0.2s;
 }
 
