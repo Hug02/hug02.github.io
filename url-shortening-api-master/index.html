@@ -15,7 +15,7 @@
   </style>
 </head>
 <body>
-  <header>
+  <header class="container">
     <img src="./images/logo.svg">
     <ion-icon name="menu-outline" id="pop-up-menu-btn"></ion-icon>
     <div class="pop-up-menu hidden">
@@ -34,7 +34,7 @@
     </div>
   </header>
 
-  <div class="hero">
+  <div class="hero container" >
     <img src="./images/illustration-working.svg" alt="working-person">
     <div class="hero__text">
       <h1>More than just shorter links</h1>
@@ -45,57 +45,58 @@
       <button type="button" onclick="" class="get-started-btn">Get Started</button>
     </div>
   </div>
-  
-  <main>
-    <form onsubmit="shortenLink(document.getElementById('url_to_shorten').value)">
-      <div class="input-group">
-        <input type="text" placeholder="Shorten a link here..." id="url_to_shorten">
-        <div class="error-message">Please add a link</div>
+  <section>
+    <main class="container">
+      <form onsubmit="shortenLink(document.getElementById('url_to_shorten').value)">
+        <div class="input-group">
+          <input type="text" placeholder="Shorten a link here..." id="url_to_shorten">
+          <div class="error-message">Please add a link</div>
+        </div>
+        <button type="button" class="btn-style-2" onclick="shortenLink(document.getElementById('url_to_shorten').value)">Shorten It!</button>
+      </form>
+      <div id="shorten-link-container"></div>
+      <div id="advanced-stats">
+        <h1>Advanced Statistics</h1>
+        <p>
+          Track how your links are performing across the web with our 
+          advanced statistics dashboard.
+        </p>
+        <div id="advanced-stats-panels-container">
+          <div class="panel">
+            <div class="img-container">
+              <img src="./images/icon-brand-recognition.svg" alt="">
+            </div>
+            <h2>Brand Recognition</h2>
+            <p class="description">
+              Boost your brand recognition with each click. Generic links don't 
+              mean a thing. Branded links help instil confidence in your content.
+            </p>
+          </div>
+          <div class="panel">
+            <div class="img-container">
+              <img src="./images/icon-detailed-records.svg" alt="">
+            </div>
+            <h2>Detailed Records</h2>
+            <p class="description">
+              Gain insights into who is clicking your links. Knowing when and where 
+              people engage with your content helps inform better decisions.
+            </p>
+          </div>
+          <div class="panel">
+            <div class="img-container">
+              <img src="./images/icon-fully-customizable.svg" alt="">
+            </div>
+            <h2>Fully Customizable</h2>
+            <p class="description">
+              Improve brand awareness and content discoverability through customizable 
+              links, supercharging audience engagement.
+            </p>
+          </div>
+          <div class="line"></div>
+        </div>
       </div>
-      <button type="button" class="btn-style-2" onclick="shortenLink(document.getElementById('url_to_shorten').value)">Shorten It!</button>
-    </form>
-    <div id="shorten-link-container"></div>
-    <div id="advanced-stats">
-      <h1>Advanced Statistics</h1>
-      <p>
-        Track how your links are performing across the web with our 
-        advanced statistics dashboard.
-      </p>
-      <div id="advanced-stats-panels-container">
-        <div class="panel">
-          <div class="img-container">
-            <img src="./images/icon-brand-recognition.svg" alt="">
-          </div>
-          <h2>Brand Recognition</h2>
-          <p class="description">
-            Boost your brand recognition with each click. Generic links don't 
-            mean a thing. Branded links help instil confidence in your content.
-          </p>
-        </div>
-        <div class="panel">
-          <div class="img-container">
-            <img src="./images/icon-detailed-records.svg" alt="">
-          </div>
-          <h2>Detailed Records</h2>
-          <p class="description">
-            Gain insights into who is clicking your links. Knowing when and where 
-            people engage with your content helps inform better decisions.
-          </p>
-        </div>
-        <div class="panel">
-          <div class="img-container">
-            <img src="./images/icon-fully-customizable.svg" alt="">
-          </div>
-          <h2>Fully Customizable</h2>
-          <p class="description">
-            Improve brand awareness and content discoverability through customizable 
-            links, supercharging audience engagement.
-          </p>
-        </div>
-        <div class="line"></div>
-      </div>
-    </div>
-  </main>
+    </main>
+  </section>
   <div id="boost-ur-link">
     <h1>Boost your links today</h1>
     <button class="get-started-btn">Get Started</button>
