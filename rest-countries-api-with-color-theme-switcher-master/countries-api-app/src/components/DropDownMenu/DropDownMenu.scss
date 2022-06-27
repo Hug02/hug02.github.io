@@ -1,0 +1,43 @@
+.dropdown-wrapper {
+    // border: 2px white solid;
+    width: 250px;
+    position: relative;
+
+    .current-value {
+        background-color: var(--secondary-color);
+        border-radius: 7px;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-bottom: 5px;
+        svg {
+            transition: transform 400ms ease;
+        }
+    }
+
+    ul {
+        position: absolute;
+        visibility: hidden;
+        width: 100%;
+        background-color: var(--secondary-color);
+        border-radius: 7px;
+        list-style: none;
+        overflow: hidden;
+
+        li {
+            margin: 13px 20px;
+            cursor: pointer;
+        }
+    }
+
+    &.active {
+        svg {
+            transform: rotate(180deg);
+        }
+
+        ul {
+            visibility: visible;
+        }
+    }
+}

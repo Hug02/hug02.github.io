@@ -1,0 +1,42 @@
+#main-home {
+    margin-top: 30px;
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+        .search-bar {
+            border-radius: 7px;
+            width: 400px;
+            position: relative;
+            display: flex;
+            height: 64px;
+            background-color: var(--secondary-color);
+        
+            svg {
+                padding: 10px;
+                height: auto;
+                width: 43px;
+            }
+        
+            input {
+                border: 0px;
+                width: 80%;
+                padding: 10px;
+                background-color: var(--secondary-color);
+                color: var(--primary-font-color);
+        
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    section {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 300px);
+        grid-column-gap: 30px;
+        grid-row-gap: 20px;
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,44 @@
+.country-card {
+    a {
+        color: var(--primary-font-color);
+        text-decoration: none;
+    }
+    height: 400px;
+    width: 300px;
+    background-color: var(--secondary-color);
+    transition: all 200ms ease;
+    border-radius: 7px;
+    overflow: hidden;
+    cursor: pointer;
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .country-card-description {
+        padding: 15px 30px;
+
+        .country-stats {
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+
+        .country-stats-key {
+            font-weight: 600;
+        }
+
+        .country-stats-data {
+            font-weight: 300;
+        }
+
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

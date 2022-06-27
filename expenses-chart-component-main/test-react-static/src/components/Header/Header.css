@@ -1,0 +1,22 @@
+header {
+    background-color: #ec755d;
+    color: #faf6f3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#myBalance {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.right {
+    display: flex;
+}
